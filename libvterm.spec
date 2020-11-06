@@ -1,13 +1,13 @@
 Summary:	An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator
 Name:		libvterm
-Version:	0.1
+Version:	0.1.3
 Release:	1
 License:	MIT
 Group:		Libraries
 # using github mirror
 # as it's just easier to get tarball
-Source0:	https://github.com/neovim/libvterm/archive/487f21d/%{name}-%{version}.tar.gz
-# Source0-md5:	29f2831ef7ca7a651e38bca91e8caf55
+Source0:	https://github.com/neovim/libvterm/archive/65dbda3/%{name}-%{version}.tar.gz
+# Source0-md5:	4b28b9a2bd73b558e97b627cfd559678
 # https://launchpad.net/libvterm
 URL:		http://www.leonerd.org.uk/code/libvterm/
 BuildRequires:	gcc
