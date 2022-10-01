@@ -4,11 +4,8 @@ Version:	0.1.3
 Release:	2
 License:	MIT
 Group:		Libraries
-# using github mirror
-# as it's just easier to get tarball
-Source0:	https://github.com/neovim/libvterm/archive/65dbda3/%{name}-%{version}.tar.gz
-# Source0-md5:	4b28b9a2bd73b558e97b627cfd559678
-# https://launchpad.net/libvterm
+Source0:	https://www.leonerd.org.uk/code/libvterm/%{name}-%{version}.tar.gz
+# Source0-md5:	4581aec6b621f5ca5cf5bff97dea6e05
 URL:		http://www.leonerd.org.uk/code/libvterm/
 BuildRequires:	gcc
 BuildRequires:	libtool
@@ -33,8 +30,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%setup -q -c %{name}-%{version}
-mv %{name}-*/* .
+%setup -q
 
 %build
 %{__make} \
