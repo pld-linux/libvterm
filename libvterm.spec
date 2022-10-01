@@ -7,9 +7,7 @@ Group:		Libraries
 Source0:	https://www.leonerd.org.uk/code/libvterm/%{name}-%{version}.tar.gz
 # Source0-md5:	4581aec6b621f5ca5cf5bff97dea6e05
 URL:		http://www.leonerd.org.uk/code/libvterm/
-BuildRequires:	gcc
 BuildRequires:	libtool
-BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
