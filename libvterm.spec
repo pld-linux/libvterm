@@ -1,11 +1,11 @@
 Summary:	An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator
 Name:		libvterm
-Version:	0.3
+Version:	0.3.1
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://www.leonerd.org.uk/code/libvterm/%{name}-%{version}.tar.gz
-# Source0-md5:	589034cdeec5d587d9a32eb10fc58022
+# Source0-md5:	79cafcd31b224be3cc369aac08be8d3e
 URL:		http://www.leonerd.org.uk/code/libvterm/
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
