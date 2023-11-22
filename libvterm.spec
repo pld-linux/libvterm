@@ -1,11 +1,11 @@
 Summary:	An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator
 Name:		libvterm
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://www.leonerd.org.uk/code/libvterm/%{name}-%{version}.tar.gz
-# Source0-md5:	34e8fc67e919a07b173869ef528cf1c3
+# Source0-md5:	7d86578b4966ce6c622fb3662d3d3ee8
 URL:		http://www.leonerd.org.uk/code/libvterm/
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,12 +42,12 @@ developing applications that use %{name}.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-    CFLAGS="%{optflags} -std=gnu99" \
-    INCDIR="%{_includedir}" \
-    LIBDIR="%{_libdir}" \
-    MANDIR="%{_mandir}" \
-    PREFIX="%{_prefix}" \
-    DESTDIR=$RPM_BUILD_ROOT
+	CFLAGS="%{optflags} -std=gnu99" \
+	INCDIR="%{_includedir}" \
+	LIBDIR="%{_libdir}" \
+	MANDIR="%{_mandir}" \
+	PREFIX="%{_prefix}" \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/libvterm.a
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/libvterm.la
